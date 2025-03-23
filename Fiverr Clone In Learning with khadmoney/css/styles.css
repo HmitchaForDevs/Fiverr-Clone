@@ -1,0 +1,351 @@
+/*body{
+    background-color:#ccc545;
+}
+h1{
+    color: rgb(114, 9, 9);
+    margin-left:30px ;
+    margin-top: 30px;
+}
+p{
+    color: aqua;
+    margin-left:30px ;
+    margin-top: 30px;
+}
+.testbutton{
+    background-color: cadetblue;
+    color: rgb(0, 0, 0);
+    margin-left:30px ; /* khelli place barra l3afsa ta3ek men la gauche
+    margin-top: 30px; /* khelli place barra l3afsa ta3ek men lfou9
+    border: none; 
+    border-radius: 20px; /* ta9was t3 l3afsa 
+    padding-left: 30px;/* khelli place dakhel l3afsa ta3ek men la gauche
+    padding-right: 30px;/* khelli place dakhel l3afsa ta3ek men la droite 
+    padding-bottom: 15px;/* khelli place dakhel l3afsa ta3ek men ltaht 
+    padding-top: 15px;/* khelli place dakhel l3afsa ta3ek men lfou9 
+    font-family: Arial, Helvetica, sans-serif; /* type ta3 lektiba 
+    font-size: 12px;/* الحجم ta3 lektiba 
+    font-weight: bold; /* gras ta3 lektiba 
+    cursor: pointer; /* bach l cursor yweli yed ki teklicki fel button 
+}
+img{
+    width: 300px;  toul 
+    height: 300px; l3ord 
+    margin-left:30px ;
+    margin-top: 30px;
+    margin ne9edro ndiro margin: 30px 30px ; bach nekhtasro margin left w margin top 
+}*/
+
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(/imgsandvds/unnamed.jp);
+}
+.header{
+    width: 100%;
+    height: 10vh; /*vh=viewport height w 100vh hadi hiya lmax li tchofha f l ecran m3a lewel*/
+    /*background-color: brown;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /*takhdem m3a l mihwar l3amoudi y*/
+    padding:0 60px ;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.header-left{
+width: 10%;
+height: 70%;
+}
+.header-left a{
+font-weight: bold;
+color: white;
+font-family:Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+text-decoration: none;
+font-size: 1.8rem;
+}
+.header-left a:hover{
+    color: #1DBF85;
+}
+.header-left span{
+    color: green;
+}
+.header-right{
+width: 50%;
+height: 70%;
+/*background-color: pink;*/
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.header-right a{
+text-decoration: none;
+font-size: 1.1rem;
+color: white;
+font-weight: bold;
+}
+.header-right a:hover{
+    color: #1DBF85;
+}
+.header-right select{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    }
+    .header-right select:hover{
+    color: #1DBF85;
+    }
+.header-right button{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 5px 10px;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .header-right button:hover{
+        color: rgb(0, 0, 0);
+        background-color: #1DBF85;
+        }
+.main{
+width: 100%;
+height: 90vh;
+background-color: rgb(0, 0, 0);
+display: flex;
+flex-direction: row;
+
+}
+
+.main-left{
+width: 58%;
+height: 100%;
+/*background-color: #1DBF85;*/
+display: flex;
+align-items: center;
+padding: 0 40px;
+}
+.main-left-center{
+    width: 100%;
+    height: 40%;
+    /*background-color: #1DBF85;*/
+
+    /*box-shadow: 25px 25px 150px red;*/
+}
+.main-left-center h1 {
+    font-size: 3rem;
+    color: white;
+}
+.main-left-center h1 span{
+    font-family: French Script MT;
+    font-size: 4rem;
+    color: #1DBF85;
+    font-style: italic;
+}
+.searchbar{
+    display: flex;
+    
+}
+.searchbar input {
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    color: white;
+    font-size: 1.05rem;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.searchbar input:hover{
+    background-color: white;
+    color: #1DBF85;
+    font-size: 1.05rem;
+}
+.searchbar button {
+    padding: 13px 13px;
+    margin-top: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.322);
+    background-color: #1DBF85;
+    width: 8%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.searchbar button:hover{
+    background-color: #78767E;
+}
+.categories{
+    /*background-color: #1DBF85;*/
+    margin-top: 15px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.categories button{
+    padding: 3px 8px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+}
+.categories button:hover{
+    background-color: white;
+    color: black;
+}
+.categories p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+}
+.main-right{
+width: 42%;
+height: 100%;
+/*background-color: #1DBF85;*/
+background: url(/imgsandvds/main-right-img2.png) no-repeat center/cover;
+
+}
+.page2{
+width: 100%;
+height: 100vh;
+position: relative;
+
+}
+
+.page2 h1{
+    padding: 60px 40px ;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.boxes{
+width: 100%;
+height: 60%;
+
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 0 30px;
+}
+.box{
+width: 18%;
+height: 100%;
+position: relative;
+margin-bottom: 20px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+
+.box:hover{
+opacity: 0.9;
+
+}
+.box img {
+width: 100%;
+height: 100%;   
+border-radius: 8px;
+}
+.box h1{
+    position: absolute;
+    left: 0%;
+    bottom: 63%;
+    font-size: 1.5rem;
+}
+.box p{
+    position: absolute;
+    left: 13%;
+    top: 7%;
+    font-size: 1.3rem;
+    color: white;
+    opacity: 0.5;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+.page3-left{
+    width: 50%;
+    height: 100%;
+    padding: 30px 40px ;
+
+}
+.page3-left p{
+    font-size: 1.4rem;
+    color: #67646A;
+}
+.page3-right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+.page3-right video{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .main-left {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+    .header-right {
+        font-size: 0.3rem;
+        padding: 8px 15px;
+        margin-right: 90px;
+        gap: 5px;
+    }
+    .header-left {
+        padding: 8px 15px;
+
+    }
+}
